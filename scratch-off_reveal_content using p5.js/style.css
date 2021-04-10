@@ -25,7 +25,7 @@ section .content h2
 {
     font-size: 3em;
 }
-section .content p
+section .content li
 {
     font-size: 1.2em;
 }
