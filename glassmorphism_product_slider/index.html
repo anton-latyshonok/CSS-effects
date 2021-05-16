@@ -2,10 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Glassmorphism product slider</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>пш
+<body>
+<div class="container">
+    <ul class="thumb">
+        <li onmouseover="changeImageSrc('shoes1.png')"><img src="shoes1.png"></li>
+        <li onmouseover="changeImageSrc('shoes2.png')"><img src="shoes2.png"></li>
+        <li onmouseover="changeImageSrc('shoes3.png')"><img src="shoes3.png"></li>
+    </ul>
+    <div class="imgBox">
+        <h2>Nike Air Zoom</h2>
+        <img src="shoes1.png" class="shoes">
+        <ul class="size">
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+        </ul>
+        <a href="#" class="btn">Add To Cart</a>
+    </div>
+</div>
+<script>
+    function changeImageSrc(anything){
+        document.querySelector('.shoes').src=anything;
+    }
+</script>
 
 </body>
 </html>
