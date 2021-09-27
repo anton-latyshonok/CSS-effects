@@ -12,7 +12,7 @@ body{
 }
 section{
     position: relative;
-    width: 100vh;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -23,22 +23,24 @@ section img{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vh;
+    width: 100%;
     pointer-events: none;
 }
 section img#moon{
+    top:-100%;
     mix-blend-mode: screen;
 }
 section img#stars{
+    top:-100%;
     height: 100%;
     object-fit: cover;
 }
 section img#mountains_behind{
-    bottom: 0;
+    bottom: -100%;
     top: initial;
 }
 section img#mountains_front{
-    bottom: 0;
+    bottom: -100%;
     top: initial;
     z-index: 1000;
 }
@@ -47,7 +49,25 @@ section img#mountains_front{
     color: #fff;
     font-size: 8vw;
     font-weight: 200;
+    margin-right: -2500px;
 }
 #text span{
     font-weight: 700;
+}
+#btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 80px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 50px;
+    background: #fff;
+    border-radius: 40px;
+    font-size: 1.4em;
+    color: #2b1055;
+    z-index: 1000;
+
+
 }
